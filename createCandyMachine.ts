@@ -6,7 +6,7 @@ import {
 } from "@metaplex-foundation/umi";
 import { createUmi } from "@metaplex-foundation/umi-bundle-defaults";
 import {
-  create,
+  createCandyMachine,
   CreateInput,
   mplCandyMachine,
 } from "@metaplex-foundation/mpl-core-candy-machine";
@@ -34,7 +34,7 @@ const coreCollection = publicKey(
   "8Y9KBabGJTNKbYn9mk1TmET4BkbiKWhuZrXYR4B9vPvE"
 );
 
-const createIx = await create(umi, {
+const createIx = await createCandyMachine(umi, {
   candyMachine: candyMachine,
   collection: coreCollection,
   collectionUpdateAuthority: umi.identity,

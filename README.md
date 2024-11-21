@@ -45,7 +45,7 @@ use createUmi from @metaplex-foundation/umi-bundle-defaults
 
 ### Step6 Create a transaction
 
-1.use create from mpl-core-candy-machine  
+1.use createCandyMachine from mpl-core-candy-machine  
 2.parameters
 
 1)candyMachine  
