@@ -16,6 +16,8 @@ Ensure a fair NFT purchasing experience with bot protection and randomized alloc
 
 umi is a basic function when we use metaplex.
 
+![](./official.png)
+
 ### Step1 create a umi
 
 use createUmi from @metaplex-foundation/umi-bundle-defaults
