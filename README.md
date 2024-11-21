@@ -24,44 +24,38 @@ use createUmi from @metaplex-foundation/umi-bundle-defaults
 
 ### Step2 get a wallet file
 
-1.fs.readFileSync
-
+1.fs.readFileSync  
 2.JSON.parse
 
 ### Step3 get a key pair
 
-1.umi.eddsa.createKeypairFromSecretKey
-
+1.umi.eddsa.createKeypairFromSecretKey  
 2.new Uint8Array
 
 ### Step4 Set to umi
 
-1.umi.use
-
-2.keypairIdentity from @metaplex-foundation/umi
-
+1.umi.use  
+2.keypairIdentity from @metaplex-foundation/umi  
 3.mplCandyMachine
 
 ### Step5 Create a signer and publickey about collection
 
-1.generateSigner
-
+1.generateSigner  
 2.publickey (we use 8Y9KBabGJTNKbYn9mk1TmET4BkbiKWhuZrXYR4B9vPvE)
 
-### Step5 Create a transaction
+### Step6 Create a transaction
 
-1.use create from mpl-core-candy-machine
-
+1.use create from mpl-core-candy-machine  
 2.parameters
 
-1)candyMachine
-2)collection
-3)collectionUpdateAuthority
-4)itemAvailable
+1)candyMachine  
+2)collection  
+3)collectionUpdateAuthority  
+4)itemAvailable  
 5)ConfigLineSettings
 
-5-1)prefixName: "Example Asset #"(15 characters)
-5-2)nameLength
-5-3)prefixUi: "https://example.com/metadata/"(29 characters)
-5-4)uriLength
+5-1)prefixName: "Example Asset #"(15 characters)  
+5-2)nameLength  
+5-3)prefixUi: "https://example.com/metadata/"(29 characters)  
+5-4)uriLength  
 5-5)isSequential
